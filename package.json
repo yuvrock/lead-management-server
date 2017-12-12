@@ -1,0 +1,22 @@
+{
+  "name": "lead-management-frontend",
+  "version": "1.0.0",
+  "description": "Web app for lead management",
+  "main": "index.js",
+  "scripts": {
+    "test": "build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jboss-outreach/lead-management-frontend.git"
+  },
+  "author": "jboss-outreach",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/jboss-outreach/lead-management-frontend/issues"
+  },
+  "dependencies": {
+    "express": "^4.15.3"
+  },
+  "homepage": "https://github.com/jboss-outreach/lead-management-frontend#readme"
+}
