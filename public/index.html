@@ -1,12 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="patternfly.navigation" class="layout-pf layout-pf-fixed">
 <head>
-  <title></title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <script src="lib/jquery.js"></script>
+  <title>Lead Management</title>
+  <link rel="stylesheet" href="dependencies/node_modules/patternfly/dist/css/patternfly.min.css">
+  <link rel="stylesheet" href="dependencies/node_modules/patternfly/dist/css/patternfly-additions.min.css">
+  <link rel="stylesheet" href="stylesheets/styles.css">
+
+  <script src="dependencies/node_modules/patternfly/dist/js/patternfly-settings.js"></script>
+  <script src="dependencies/node_modules/angular/angular.min.js"></script>
+  <script src="dependencies/node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+  <script src="dependencies/dist/angular-patternfly.min.js"></script>
   <script src="js/script.js"></script>
 </head>
 <body>
-  <h1 > Hello from lead management </h1>
+  <div id="verticalNavLayout" class="layout-pf layout-pf-fixed faux-layout" ng-controller="vertNavController">
+    <pf-vertical-navigation items="navigationItems" brand-alt="Lead Management" update-active-items-on-click="true" navigate-callback="handleNavigateClick">
+    </pf-vertical-navigation>
+  </div>
+  <div id="contentContainer" class="container-fluid container-cards-pf container-pf-nav-pf-vertical">
+    <div id="header">
+      <h1>Hello from Lead Management</h1>
+    </div>
+  </div>
 </body>
 </html>
