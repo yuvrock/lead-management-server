@@ -4,9 +4,7 @@ const app = express();
 
 // serve static content from under /public/ dir
 app.use('/', express.static(__dirname + "/public/"));
-
-// Serve some script & stylesheet dependencies from angular-patternfly
-app.use('/dependencies', express.static(__dirname + "/node_modules/angular-patternfly/"));
+app.use('/node_modules', express.static(__dirname + "/node_modules/"));
 
 
 app.listen(4000, function(){
