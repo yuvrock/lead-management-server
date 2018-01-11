@@ -1,15 +1,31 @@
 angular.module('patternfly.navigation').controller('vertNavController', ['$scope',
     function($scope) {
-        $scope.navigationItems = [{
-                title: "Contacts",
-                iconClass: "fa fa-user",
-                href: "#/contacts"
+        $scope.navigationItems = [
+            {
+                title: "New leads",
+                iconClass: "fa fa-address-book-o",
+                href: "#/leads"
             },
             {
-                title: "Groups",
-                iconClass: "fa fa-users",
-                href: "#/groups"
+                title: "My sales",
+                iconClass: "fa fa-briefcase",
+                href: "#/sales"
             },
+            {
+                title: "Analytics",
+                iconClass: "fa fa-line-chart",
+                href: "#/analytics"
+            },
+            {
+                title: "Clients",
+                iconClass: "fa fa-address-card-o",
+                href: "#/clients"
+            },
+            {
+                title: "Reminders",
+                iconClass: "fa fa-bell-o",
+                href: "#/reminders"
+            }
         ];
     }
 ]);
