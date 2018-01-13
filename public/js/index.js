@@ -30,6 +30,11 @@ angular.module('patternfly.navigation').controller('vertNavController', ['$scope
     }
 ]);
 
+const socket = io();
+socket.on('call status change', function(msg) {
+    console.log(msg);
+});
+
 let signedIn = false;
 
 window.addEventListener("load", function() {
