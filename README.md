@@ -33,7 +33,7 @@ Make sure that the branch name is meaningful and related to the changes you are 
 Execute the following commands in terminal/command prompt to run the project:
 ```sh
 $ npm install
-$ node app.js
+$ npm start
 ```
 
 ## Contributing
