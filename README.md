@@ -1,6 +1,5 @@
 # lead-management-server
-![Build Status](https://travis-ci.org/sidhyatikku/lead-management-server.svg?branch=master)
-
+[![Build Status](https://travis-ci.org/JBossOutreach/lead-management-server.svg?branch=master)](https://travis-ci.org/JBossOutreach/lead-management-server)
 
 For account authentication, set up a Firebase project [here](https://console.firebase.google.com)
 and add the project configuration in the [public/js/config.js](https://github.com/jboss-outreach/lead-management-server/blob/master/public/js/config.js) file.
